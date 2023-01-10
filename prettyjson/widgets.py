@@ -4,7 +4,7 @@ from django.forms import widgets
 
 class PrettyJSONWidget(widgets.Textarea):
 
-    DEFAULT_ATTR = 'raw'
+    DEFAULT_ATTR = 'parsed'
 
     def render(self, name, value, attrs=None, **kwargs):
         html = super(PrettyJSONWidget, self).render(name, value, attrs)
